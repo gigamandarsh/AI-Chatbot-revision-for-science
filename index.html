@@ -3,42 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>AI Revision Tool – Level 1</title>
-   <title>AI Revision Tool – Level 1</title>
   <style>
-    /* Make the page and body take full height */
+    /* Make the page take full screen */
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
     }
 
-    /* Center the content and make it full width and height */
+    /* Center the heading at the top */
     body {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      background-color: #f5f5f5;
-      font-family: Arial, sans-serif;
     }
 
     h2 {
-      margin: 20px 0;
+      margin: 30px 0;
     }
 
-    #chatbot {
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    /* Optional: add a content container */
+    .container {
       width: 90%;
-      height: 80vh; /* 80% of viewport height */
-      border: none;
+      max-width: 1200px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-<h2>AI Revision Tool – Level 1</h2>
-<p>Ask your questions below:</p>
+<div class="container">
+  <h2>AI Revision Tool – Level 1</h2>
+  <p>Ask your questions below and revise your lessons quickly!</p>
+</div>
 
-<!-- Noupe AI Chatbot Embed -->
+<!-- Noupe AI chatbot embed -->
 <script src="https://www.noupe.com/embed/019ba2b0650975a1bebb630ff824928472df.js"></script>
 
 </body>
