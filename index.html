@@ -2,51 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AI Revision Tool – Level 1</title>
+  <title>AI Revision Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    /* Make the page take full screen */
     html, body {
+      width: 100%;
       height: 100%;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+      overflow: hidden;
       font-family: Arial, sans-serif;
+      background: #0f172a;
     }
 
-    /* Center the heading at the top */
-    body {
+    .bot-container {
+      width: 100vw;
+      height: 100vh;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: flex-start;
     }
 
-    h2 {
-      margin: 30px 0;
-    }
-
-    p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-    /* Optional: add a content container */
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      text-align: center;
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
   </style>
 </head>
+
 <body>
-
-<div class="container">
-  <h2>AI Revision Tool – Level 1</h2>
-  <p>Ask your questions below and revise your lessons quickly!</p>
-</div>
-
-<!-- Noupe AI chatbot embed -->
-<script src="https://www.noupe.com/embed/019bb2ec47217024bc60a90f158445d69b6c.js"></script>
-
+  <div class="bot-container">
+    <!-- 👇 PASTE YOUR NOUPE AI EMBED LINK BELOW -->
+    <iframe src="https://www.noupe.com/embed/019bb2ec47217024bc60a90f158445d69b6c.js"></iframe>
+  </div>
 </body>
 </html>
