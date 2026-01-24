@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AI Revision Tool</title>
+  <title>AI Revision Tool – Level 2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -13,18 +13,41 @@
       padding: 0;
       overflow: hidden;
       font-family: Arial, sans-serif;
-      background: #0f172a;
     }
 
-    .bot-container {
+    /* Background iframe (CodePen) */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100vw;
       height: 100vh;
+      z-index: 1;
+      opacity: 0.25; /* makes background soft */
+      pointer-events: none; /* prevents clicking background */
+    }
+
+    .background iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Bot container on top */
+    .bot-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 2;
       display: flex;
       justify-content: center;
       align-items: center;
+      background: rgba(0, 0, 0, 0.3);
     }
 
-    iframe {
+    .bot-container iframe {
       width: 100%;
       height: 100%;
       border: none;
@@ -33,8 +56,14 @@
 </head>
 
 <body>
+
+  <!-- 🔹 CodePen Background -->
+  <div class="background">
+    <iframe src="https://codepen.io"></iframe>
+  </div>
+
+  <!-- 🔹 Noupe AI Bot (ON TOP) -->
   <div class="bot-container">
-    <!-- 👇 PASTE YOUR NOUPE AI EMBED LINK BELOW -->
     <iframe src="https://www.noupe.com/embed/019bb2ec47217024bc60a90f158445d69b6c.js"></iframe>
   </div>
 </body>
